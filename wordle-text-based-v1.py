@@ -10,6 +10,9 @@ def instructions():
 instructions()
 
 def check_word():
+    #    TO-DO ... print used letters for each attempt, so player can see which letters are / (right letter in right place), + (right letter but wrong place), and x (wrong letter; not in word)
+    #    TO-DO ... add feature, randomly choose word from text list
+    #    TO-DO ... track words used from text list; don't choose those words until entire list is used
     hidden_word = "crate"
     attempts = 6
 
