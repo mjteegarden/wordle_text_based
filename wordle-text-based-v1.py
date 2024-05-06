@@ -85,9 +85,9 @@ check_word()    # play the game; call the function 'check_word'
         print the already-guessed letters in one line, separated by ", ", with newspace at-end
         open text file (read-only) of words list; put words into list; randomly choose 1 word; use that word for game
         compare guess word against word_list from text.file; ensure guess word is a valid 5-letter word from file'''
-# write to new file; indicate a word is used (False) or available (True) [create DICT from words:boolean pairs]
 # create version of this program that uses MATCH instead of IF (as much as possible)
-# refine feedback correct/incorrect letters: only 1st correct letter/wrong spot is shown
+# write to new file; indicate a word is used (False) or available (True) [create DICT from words:boolean pairs]
+# refine feedback: only 1st correct letter/wrong spot is shown
 # put onto web site (gotta get web site) for play
 # instead of using "random" module, try "secrets module" (see: https://docs.python.org/3/library/secrets.html#module-secrets)
 # add menu; allow player option to play again or quit
