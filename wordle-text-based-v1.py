@@ -1,6 +1,13 @@
+'''
+imports:
+os - for functionality in navigating
+random - for functionality in generating pseudo-random (unsecured) numbers
+'''
+
 import os
 import random
 
+# this drive/file navigation uses a home desktop computer ... TO-DO: put word file somewhere accessible online?
 os.chdir(r"D:\technical\language-Python\PROJECTS\project-wordle clone game -no graphics")
 
 def instructions():    # this function prints the game's instructions
@@ -77,18 +84,22 @@ def check_word():    # game's 'core': get random word, compare against guesses, 
 check_word()    # play the game; call the function 'check_word'
 
 
-# TO-DO list (mark each DONE when completed):
-''' DONE:
+''' 
+TO-DO list (mark each DONE when completed):
+DONE:
         force player-inputted guess word is exactly 5 characters long
         force player-inputted guess word is exactly 5 letters long (either case)
         print all guessed letters so player knows what remains unguessed 
         print the already-guessed letters in one line, separated by ", ", with newspace at-end
         open text file (read-only) of words list; put words into list; randomly choose 1 word; use that word for game
         compare guess word against word_list from text.file; ensure guess word is a valid 5-letter word from file'''
-# create version of this program that uses MATCH instead of IF (as much as possible)
-# write to new file; indicate a word is used (False) or available (True) [create DICT from words:boolean pairs]
-# refine feedback: only 1st correct letter/wrong spot is shown
-# put onto web site (gotta get web site) for play
-# instead of using "random" module, try "secrets module" (see: https://docs.python.org/3/library/secrets.html#module-secrets)
-# add menu; allow player option to play again or quit
-# clean up function check_word() ... What can I take out of it?  Clean up the code ......
+
+NOT DONE:
+create version of this program that uses MATCH instead of IF (as much as possible)
+write to new file; indicate a word is used (False) or available (True) [create DICT from words:boolean pairs]
+refine feedback: only 1st correct letter/wrong spot is shown
+put onto web site (gotta get web site) for play
+instead of using "random" module, try "secrets module" (see: https://docs.python.org/3/library/secrets.html#module-secrets)
+add menu; allow player option to play again or quit
+clean up function check_word() ... What can I take out of it?  Clean up the code ...... 
+'''
