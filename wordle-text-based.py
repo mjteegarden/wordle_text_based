@@ -83,6 +83,11 @@ def check_word():    # game's 'core': get random word, compare against guesses, 
 
 check_word()    # play the game; call the function 'check_word'
 
+choice = str(input("Play again?  Y/N"))        
+    if choice == "Y" or "y":
+        check_word()
+    else: 
+        break
 
 ''' 
 TO-DO list (mark each DONE when completed):
@@ -95,7 +100,6 @@ DONE:
         compare guess word against word_list from text.file; ensure guess word is a valid 5-letter word from file'''
 
 NOT DONE:
-create version of this program that uses MATCH instead of IF (as much as possible)
 write to new file; indicate a word is used (False) or available (True) [create DICT from words:boolean pairs]
 refine feedback: only 1st correct letter/wrong spot is shown
 put onto web site (gotta get web site) for play
